@@ -1,0 +1,2 @@
+# AsyncHTTPRequest_Teensy41
+Simple Async HTTP Request library, supporting GET, POST, PUT, PATCH, DELETE and HEAD, on top of Teensy41_AsyncTCP for Teensy 4.1 using QNEthernet. This library is one of the current or future Async libraries to support Teensy 4.1 using QNEthernet, such as AsyncHTTPRequest_Generic, AsyncHTTPSRequest_Generic, AsyncMQTT_Generic, Teensy41_AsyncWebServer, Teensy41_AsyncUDP, Teensy41_AsyncDNSServer, AsyncHTTPRequest_Teensy41_SSL, etc.
