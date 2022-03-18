@@ -2,7 +2,6 @@
 
 [![arduino-library-badge](https://www.ardu-badge.com/badge/AsyncHTTPRequest_Teensy41.svg?)](https://www.ardu-badge.com/AsyncHTTPRequest_Teensy41)
 [![GitHub release](https://img.shields.io/github/release/khoih-prog/AsyncHTTPRequest_Teensy41.svg)](https://github.com/khoih-prog/AsyncHTTPRequest_Teensy41/releases)
-[![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/khoih-prog/AsyncHTTPRequest_Teensy41/blob/main/LICENSE)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](#Contributing)
 [![GitHub issues](https://img.shields.io/github/issues/khoih-prog/AsyncHTTPRequest_Teensy41.svg)](http://github.com/khoih-prog/AsyncHTTPRequest_Teensy41/issues)
 
@@ -38,7 +37,7 @@
 * [Example AsyncHTTPRequest](#example-asynchttprequest)
   * [1. File AsyncHTTPRequest.ino](#1-file-asynchttprequestino)
   * [2. File defines.h](#2-file-definesh) 
-* [Debug Terminal Output Samples](#debug-termimal-output-samples)
+* [Debug Terminal Output Samples](#debug-terminal-output-samples)
   * [1. AsyncHTTPRequest on TEENSY 4.1](#1-AsyncHTTPRequest-on-TEENSY-41)
   * [2. AsyncCustomHeader on TEENSY 4.1](#2-AsyncCustomHeader-on-TEENSY-41)
   * [3. AsyncDweetGET on TEENSY 4.1](#3-AsyncDweetGET-on-TEENSY-41)
@@ -333,7 +332,7 @@ Actual value: 66
 
 ---
 
-#### 4. [AsyncDweetPOST](examples/AsyncDweetPOST) running on ESP8266_NODEMCU
+#### 4. [AsyncDweetPOST](examples/AsyncDweetPOST) on TEENSY 4.1
 
 ```
 Start AsyncDweetPOST on TEENSY 4.1
@@ -450,7 +449,7 @@ Submit issues to: [AsyncHTTPRequest_Teensy41 issues](https://github.com/khoih-pr
 
 This library is based on, modified, bug-fixed and improved from:
 
-1. [Bob Lemaire's **asyncHTTPrequest Library**](https://github.com/boblemaire/asyncHTTPrequest) to use the better **asynchronous** features of these following Async TCP Libraries : ( [`ESPAsyncTCP`](https://github.com/me-no-dev/ESPAsyncTCP), [`AsyncTCP`](https://github.com/me-no-dev/AsyncTCP), and [`STM32AsyncTCP`](https://github.com/philbowles/STM32AsyncTCP) ).
+1. [Bob Lemaire's **asyncHTTPrequest Library**](https://github.com/boblemaire/asyncHTTPrequest) to use the better **asynchronous** features of these following Async TCP Libraries : ( [`ESPAsyncTCP`](https://github.com/me-no-dev/ESPAsyncTCP), [`AsyncTCP`](https://github.com/me-no-dev/AsyncTCP), and [`Teensy41_AsyncTCP`](https://github.com/khoih-prog/Teensy41_AsyncTCP).
 
 
 <table>
