@@ -17,14 +17,16 @@
   as published bythe Free Software Foundation, either version 3 of the License, or (at your option) any later version.
   This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of
   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
-  You should have received a copy of the GNU General Public License along with this program.  If not, see <https://www.gnu.org/licenses/>.  
+  You should have received a copy of the GNU General Public License along with this program. 
+  If not, see <https://www.gnu.org/licenses/>.  
  
-  Version: 1.7.1
+  Version: 1.8.0
   
   Version Modified By   Date      Comments
   ------- -----------  ---------- -----------
   1.7.1    K Hoang     18/03/2022 Initial coding for Teensy 4.1 using built-in QNEthernet.
                                   Bump up version to v1.7.1 to sync with AsyncHTTPRequest_Generic v1.7.1
+  1.9.0    K Hoang     01/09/2022 Fix bug. Improve debug messages. Optimize code          
  *****************************************************************************************************************************/
 
 #pragma once
@@ -32,13 +34,13 @@
 #ifndef ASYNC_HTTP_REQUEST_TEENSY41_HPP
 #define ASYNC_HTTP_REQUEST_TEENSY41_HPP
 
-#define ASYNC_HTTP_REQUEST_TEENSY41_VERSION            "AsyncHTTPRequest_Teensy41 v1.7.1"
+#define ASYNC_HTTP_REQUEST_TEENSY41_VERSION            "AsyncHTTPRequest_Teensy41 v1.8.0"
 
 #define ASYNC_HTTP_REQUEST_TEENSY41_VERSION_MAJOR      1
-#define ASYNC_HTTP_REQUEST_TEENSY41_VERSION_MINOR      7
-#define ASYNC_HTTP_REQUEST_TEENSY41_VERSION_PATCH      1
+#define ASYNC_HTTP_REQUEST_TEENSY41_VERSION_MINOR      8
+#define ASYNC_HTTP_REQUEST_TEENSY41_VERSION_PATCH      0
 
-#define ASYNC_HTTP_REQUEST_TEENSY41_VERSION_INT        1007001
+#define ASYNC_HTTP_REQUEST_TEENSY41_VERSION_INT        1008000
 
 #include <Arduino.h>
 
@@ -130,8 +132,6 @@ class xbuf: public Print
     the following inherited functions from the Print class are available.
     
     size_t printf(const char * format, ...)  __attribute__ ((format (printf, 2, 3)));
-    size_t printf_P(PGM_P format, ...) __attribute__((format(printf, 2, 3)));
-    size_t print(const __FlashStringHelper *);
     size_t print(const String &);
     size_t print(const char[]);
     size_t print(char);
@@ -143,7 +143,6 @@ class xbuf: public Print
     size_t print(double, int = 2);
     size_t print(const Printable&);
     
-    size_t println(const __FlashStringHelper *);
     size_t println(const String &s);
     size_t println(const char[]);
     size_t println(char);
@@ -224,28 +223,24 @@ class AsyncHTTPRequest
 
     struct  URL 
     {
-      char*   scheme;
-      char*   user;
-      char*   pwd;
-      char*   host;
+      char     *buffer;
+      char    *scheme;
+      char    *host;
       int     port;
-      char*   path;
-      char*   query;
-      char*   fragment;
+      char    *path;
+      char    *query;
       
-      URL():  scheme(nullptr), user(nullptr), pwd(nullptr), host(nullptr),
-              port(80), path(nullptr), query(nullptr), fragment(nullptr)
+      URL():  buffer(nullptr), scheme(nullptr), host(nullptr),
+              port(80), path(nullptr), query(nullptr)
       {};
-      
-      ~URL() 
+        
+      ~URL()
       {
+        SAFE_DELETE_ARRAY(buffer)
         SAFE_DELETE_ARRAY(scheme)
-        SAFE_DELETE_ARRAY(user)
-        SAFE_DELETE_ARRAY(pwd)
         SAFE_DELETE_ARRAY(host)
         SAFE_DELETE_ARRAY(path)
         SAFE_DELETE_ARRAY(query)
-        SAFE_DELETE_ARRAY(fragment)
       }
     };
 
@@ -292,6 +287,7 @@ class AsyncHTTPRequest
     size_t      available();                                            // response available
     size_t      responseLength();                                       // indicated response length or sum of chunks to date
     int         responseHTTPcode();                                     // HTTP response code or (negative) error code
+    String      responseHTTPString();
     String      responseText();                                         // response (whole* or partial* as string)
     
     char*       responseLongText();                                     // response long (whole* or partial* as string)
@@ -303,17 +299,13 @@ class AsyncHTTPRequest
 
   private:
 
-    // New in v1.1.1
     bool _requestReadyToSend;
-    //////
-    
-    // New in v1.1.0
+
     typedef enum  { HTTPmethodGET, HTTPmethodPOST, HTTPmethodPUT, HTTPmethodPATCH, HTTPmethodDELETE, HTTPmethodHEAD, HTTPmethodMAX } HTTPmethod;
     
     HTTPmethod _HTTPmethod;
     
     const char* _HTTPmethodStringwithSpace[HTTPmethodMAX] = {"GET ", "POST ", "PUT ", "PATCH ", "DELETE ", "HEAD "};
-    //////
     
     reqStates       _readyState;
 

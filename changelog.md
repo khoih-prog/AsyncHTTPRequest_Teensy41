@@ -13,12 +13,20 @@
 
 * [Table of contents](#table-of-contents)
 * [Changelog](#changelog)
+  * [Releases v1.8.0](#releases-v180)
   * [Releases v1.7.1](#releases-v171)
 
 ---
 ---
 
 ## Changelog
+
+### Releases v1.8.0
+
+1. Fix long timeout if using bad `IPAddress`
+2. Optimize code
+3. Display only successful responseText in examples
+4. Improve debug messages by adding functions to display error messages instead of `cryptic error number`
 
 ### Releases v1.7.1
 

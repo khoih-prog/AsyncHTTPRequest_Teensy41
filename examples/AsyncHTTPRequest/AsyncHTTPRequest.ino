@@ -37,8 +37,12 @@
 
 #include "defines.h"
 
-#define ASYNC_HTTP_REQUEST_TEENSY41_VERSION_MIN_TARGET      "AsyncHTTPRequest_Teensy41 v1.7.1"
-#define ASYNC_HTTP_REQUEST_TEENSY41_VERSION_MIN             1007001
+#define ASYNC_HTTP_REQUEST_TEENSY41_VERSION_MIN_TARGET      "AsyncHTTPRequest_Teensy41 v1.8.0"
+#define ASYNC_HTTP_REQUEST_TEENSY41_VERSION_MIN             1008000
+
+// Level from 0-4
+#define ASYNC_HTTP_DEBUG_PORT     Serial
+#define _ASYNC_HTTP_LOGLEVEL_     4
 
 // 600s = 10 minutes to not flooding, 60s in testing
 #define HTTP_REQUEST_INTERVAL_MS     60000  //600000
