@@ -30,8 +30,12 @@ const char GET_ServerAddress[] = "dweet.io";
 // use your own thing name here
 String dweetName = "/dweet/for/currentSecond?second=";
 
-#define ASYNC_HTTP_REQUEST_TEENSY41_VERSION_MIN_TARGET      "AsyncHTTPRequest_Teensy41 v1.7.1"
-#define ASYNC_HTTP_REQUEST_TEENSY41_VERSION_MIN             1007001
+#define ASYNC_HTTP_REQUEST_TEENSY41_VERSION_MIN_TARGET      "AsyncHTTPRequest_Teensy41 v1.8.0"
+#define ASYNC_HTTP_REQUEST_TEENSY41_VERSION_MIN             1008000
+
+// Level from 0-4
+#define ASYNC_HTTP_DEBUG_PORT     Serial
+#define _ASYNC_HTTP_LOGLEVEL_     2
 
 // 600s = 10 minutes to not flooding, 60s in testing
 #define HTTP_REQUEST_INTERVAL_MS     60000  //600000
@@ -112,14 +116,19 @@ void requestCB(void* optParm, AsyncHTTPRequest* request, int readyState)
   
   if (readyState == readyStateDone)
   {
-    String responseText = request->responseText();
-    
-    Serial.println("\n**************************************");
-    //Serial.println(request->responseText());
-    Serial.println(responseText);
-    Serial.println("**************************************");
+    AHTTP_LOGWARN(F("\n**************************************"));
+    AHTTP_LOGWARN1(F("Response Code = "), request->responseHTTPString());
 
-    parseResponse(responseText);
+    if (request->responseHTTPcode() == 200)
+    {
+      String responseText = request->responseText();
+    
+      Serial.println("\n**************************************");
+      Serial.println(responseText);
+      Serial.println("**************************************");
+  
+      parseResponse(responseText);
+    }
       
     request->setDebug(false);
   }
@@ -128,7 +137,7 @@ void requestCB(void* optParm, AsyncHTTPRequest* request, int readyState)
 void setup() 
 {
   Serial.begin(115200);
-  while (!Serial);
+  while (!Serial && millis() < 5000);
   
   Serial.print("\nStart AsyncDweetGET on "); Serial.println(BOARD_NAME);
   Serial.println(ASYNC_HTTP_REQUEST_TEENSY41_VERSION);

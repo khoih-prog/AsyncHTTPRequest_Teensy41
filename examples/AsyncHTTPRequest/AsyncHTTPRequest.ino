@@ -42,7 +42,7 @@
 
 // Level from 0-4
 #define ASYNC_HTTP_DEBUG_PORT     Serial
-#define _ASYNC_HTTP_LOGLEVEL_     4
+#define _ASYNC_HTTP_LOGLEVEL_     2
 
 // 600s = 10 minutes to not flooding, 60s in testing
 #define HTTP_REQUEST_INTERVAL_MS     60000  //600000
@@ -84,24 +84,28 @@ void sendRequest()
   }
 }
 
-void requestCB(void* optParm, AsyncHTTPRequest* request, int readyState) 
+void requestCB(void *optParm, AsyncHTTPRequest *request, int readyState)
 {
   (void) optParm;
-  
-  if (readyState == readyStateDone) 
+
+  if (readyState == readyStateDone)
   {
-    Serial.println("\n**************************************");
-    Serial.println(request->responseText());
-    Serial.println("**************************************");
-    
-    request->setDebug(false);
+    AHTTP_LOGDEBUG(F("\n**************************************"));
+    AHTTP_LOGDEBUG1(F("Response Code = "), request->responseHTTPString());
+
+    if (request->responseHTTPcode() == 200)
+    {
+      Serial.println(F("\n**************************************"));
+      Serial.println(request->responseText());
+      Serial.println(F("**************************************"));
+    }
   }
 }
 
 void setup() 
 {
   Serial.begin(115200);
-  while (!Serial);
+  while (!Serial && millis() < 5000);
   
   Serial.print("\nStart AsyncHTTPRequest on "); Serial.println(BOARD_NAME);
   Serial.println(ASYNC_HTTP_REQUEST_TEENSY41_VERSION);

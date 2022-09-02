@@ -21,8 +21,12 @@
   #error Only Teensy 4.1 supported
 #endif
 
-#define ASYNC_HTTP_REQUEST_TEENSY41_VERSION_MIN_TARGET      "AsyncHTTPRequest_Teensy41 v1.7.1"
-#define ASYNC_HTTP_REQUEST_TEENSY41_VERSION_MIN             1007001
+#define ASYNC_HTTP_REQUEST_TEENSY41_VERSION_MIN_TARGET      "AsyncHTTPRequest_Teensy41 v1.8.0"
+#define ASYNC_HTTP_REQUEST_TEENSY41_VERSION_MIN             1008000
+
+// Level from 0-4
+#define ASYNC_HTTP_DEBUG_PORT     Serial
+#define _ASYNC_HTTP_LOGLEVEL_     2
 
 #include "multiFileProject.h"
 
@@ -32,7 +36,7 @@
 void setup() 
 {
   Serial.begin(115200);
-  while (!Serial);
+  while (!Serial && millis() < 5000);
   
   Serial.println("\nStart multiFileProject");
   Serial.println(ASYNC_HTTP_REQUEST_TEENSY41_VERSION);
