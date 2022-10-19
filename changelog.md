@@ -13,6 +13,7 @@
 
 * [Table of contents](#table-of-contents)
 * [Changelog](#changelog)
+  * [Releases v1.8.1](#releases-v181)
   * [Releases v1.8.0](#releases-v180)
   * [Releases v1.7.1](#releases-v171)
 
@@ -20,6 +21,10 @@
 ---
 
 ## Changelog
+
+### Releases v1.8.1
+
+1. Not try to reconnect to the same host:port after connected. Check [setReuse feature #12](https://github.com/khoih-prog/AsyncHTTPSRequest_Generic/issues/12)
 
 ### Releases v1.8.0
 

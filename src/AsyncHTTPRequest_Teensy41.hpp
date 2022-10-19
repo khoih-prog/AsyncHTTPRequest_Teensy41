@@ -20,13 +20,14 @@
   You should have received a copy of the GNU General Public License along with this program. 
   If not, see <https://www.gnu.org/licenses/>.  
  
-  Version: 1.8.0
+  Version: 1.8.1
   
   Version Modified By   Date      Comments
   ------- -----------  ---------- -----------
   1.7.1    K Hoang     18/03/2022 Initial coding for Teensy 4.1 using built-in QNEthernet.
                                   Bump up version to v1.7.1 to sync with AsyncHTTPRequest_Generic v1.7.1
-  1.8.0    K Hoang     01/09/2022 Fix bug. Improve debug messages. Optimize code          
+  1.8.0    K Hoang     01/09/2022 Fix bug. Improve debug messages. Optimize code
+  1.8.1    K Hoang     18/10/2022 Not try to reconnect to the same host:port after connected
  *****************************************************************************************************************************/
 
 #pragma once
@@ -34,13 +35,13 @@
 #ifndef ASYNC_HTTP_REQUEST_TEENSY41_HPP
 #define ASYNC_HTTP_REQUEST_TEENSY41_HPP
 
-#define ASYNC_HTTP_REQUEST_TEENSY41_VERSION            "AsyncHTTPRequest_Teensy41 v1.8.0"
+#define ASYNC_HTTP_REQUEST_TEENSY41_VERSION            "AsyncHTTPRequest_Teensy41 v1.8.1"
 
 #define ASYNC_HTTP_REQUEST_TEENSY41_VERSION_MAJOR      1
 #define ASYNC_HTTP_REQUEST_TEENSY41_VERSION_MINOR      8
-#define ASYNC_HTTP_REQUEST_TEENSY41_VERSION_PATCH      0
+#define ASYNC_HTTP_REQUEST_TEENSY41_VERSION_PATCH      1
 
-#define ASYNC_HTTP_REQUEST_TEENSY41_VERSION_INT        1008000
+#define ASYNC_HTTP_REQUEST_TEENSY41_VERSION_INT        1008001
 
 #include <Arduino.h>
 
