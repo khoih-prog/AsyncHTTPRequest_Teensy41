@@ -422,7 +422,7 @@ You can also change the debugging level from 0 to 4
 
 If you get compilation errors, more often than not, you may need to install a newer version of the `ESP32 / ESP8266 / STM32` core for Arduino.
 
-Sometimes, the library will only work if you update the `ESP32 / ESP8266 / STM32` core to the latest version because I am using newly added functions.
+Sometimes, the library will only work if you update the `Teensy` core to the latest version because I am using newly added functions.
 
 ---
 
@@ -456,7 +456,7 @@ Submit issues to: [AsyncHTTPRequest_Teensy41 issues](https://github.com/khoih-pr
 
 This library is based on, modified, bug-fixed and improved from:
 
-1. [Bob Lemaire's **asyncHTTPrequest Library**](https://github.com/boblemaire/asyncHTTPrequest) to use the better **asynchronous** features of these following Async TCP Libraries : ( [`ESPAsyncTCP`](https://github.com/me-no-dev/ESPAsyncTCP), [`AsyncTCP`](https://github.com/me-no-dev/AsyncTCP), and [`Teensy41_AsyncTCP`](https://github.com/khoih-prog/Teensy41_AsyncTCP).
+1. [Bob Lemaire's **asyncHTTPrequest Library**](https://github.com/boblemaire/asyncHTTPrequest) to use the better **asynchronous** features of these following Async TCP Libraries : ( [`ESPAsyncTCP`](https://github.com/me-no-dev/ESPAsyncTCP), [`AsyncTCP`](https://github.com/me-no-dev/AsyncTCP), and [`Teensy41_AsyncTCP`](https://github.com/khoih-prog/Teensy41_AsyncTCP) )
 
 
 <table>
