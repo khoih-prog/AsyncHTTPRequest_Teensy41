@@ -21,8 +21,8 @@
   #error Only Teensy 4.1 supported
 #endif
 
-#define ASYNC_HTTP_REQUEST_TEENSY41_VERSION_MIN_TARGET      "AsyncHTTPRequest_Teensy41 v1.9.0"
-#define ASYNC_HTTP_REQUEST_TEENSY41_VERSION_MIN             1009000
+#define ASYNC_HTTP_REQUEST_TEENSY41_VERSION_MIN_TARGET      "AsyncHTTPRequest_Teensy41 v1.9.1"
+#define ASYNC_HTTP_REQUEST_TEENSY41_VERSION_MIN             1009001
 
 // Level from 0-4
 #define ASYNC_HTTP_DEBUG_PORT     Serial

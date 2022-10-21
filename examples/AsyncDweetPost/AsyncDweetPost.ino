@@ -24,8 +24,8 @@ const char POST_ServerAddress[] = "dweet.io";
 // use your own thing name here
 String dweetName = "/dweet/for/pinA0-Read?";
 
-#define ASYNC_HTTP_REQUEST_TEENSY41_VERSION_MIN_TARGET      "AsyncHTTPRequest_Teensy41 v1.9.0"
-#define ASYNC_HTTP_REQUEST_TEENSY41_VERSION_MIN             1009000
+#define ASYNC_HTTP_REQUEST_TEENSY41_VERSION_MIN_TARGET      "AsyncHTTPRequest_Teensy41 v1.9.1"
+#define ASYNC_HTTP_REQUEST_TEENSY41_VERSION_MIN             1009001
 
 // Level from 0-4
 #define ASYNC_HTTP_DEBUG_PORT     Serial
