@@ -201,14 +201,14 @@ Have a look at the discussion in [Different behaviour using the src_cpp or src_h
 
 #### 1. File [AsyncHTTPRequest.ino](examples/AsyncHTTPRequest/AsyncHTTPRequest.ino)
 
-https://github.com/khoih-prog/AsyncHTTPRequest_Teensy41/blob/44abb8b160c6053d179ad5b3086a63033fc9e482/examples/AsyncHTTPRequest/AsyncHTTPRequest.ino#L38-L173
+https://github.com/khoih-prog/AsyncHTTPRequest_Teensy41/blob/d75e5e296dd01c143b32b37be1016e72277bb00c/examples/AsyncHTTPRequest/AsyncHTTPRequest.ino#L38-L176
 
 
 ---
 
 #### 2. File [defines.h](examples/AsyncHTTPRequest/defines.h)
 
-https://github.com/khoih-prog/AsyncHTTPRequest_Teensy41/blob/44abb8b160c6053d179ad5b3086a63033fc9e482/examples/AsyncHTTPRequest/defines.h#L16-L50
+https://github.com/khoih-prog/AsyncHTTPRequest_Teensy41/blob/d75e5e296dd01c143b32b37be1016e72277bb00c/examples/AsyncHTTPRequest/defines.h#L16-L50
 
 
 ---
@@ -224,7 +224,7 @@ https://github.com/khoih-prog/AsyncHTTPRequest_Teensy41/blob/44abb8b160c6053d179
 
 ```
 Start AsyncHTTPRequest on TEENSY 4.1
-AsyncHTTPRequest_Teensy41 v1.9.0
+AsyncHTTPRequest_Teensy41 v1.9.1
 Initialize Ethernet using DHCP => Connected! IP address:192.168.2.107
 
 **************************************
@@ -271,7 +271,7 @@ week_number: 42
 
 ```
 Start AsyncCustomHeader on TEENSY 4.1
-AsyncHTTPRequest_Teensy41 v1.9.0
+AsyncHTTPRequest_Teensy41 v1.9.1
 Initialize Ethernet using DHCP => Connected! IP address:192.168.2.107
 
 Sending GET Request to http://worldtimeapi.org/api/timezone/America/Toronto.txt
@@ -322,7 +322,7 @@ week_number: 42
 
 ```
 Start AsyncDweetGET on TEENSY 4.1
-AsyncHTTPRequest_Teensy41 v1.9.0
+AsyncHTTPRequest_Teensy41 v1.9.1
 Initialize Ethernet using DHCP => Connected! IP address:192.168.2.107
 
 **************************************
@@ -339,7 +339,7 @@ Actual value: 66
 
 ```
 Start AsyncDweetPOST on TEENSY 4.1
-AsyncHTTPRequest_Teensy41 v1.9.0
+AsyncHTTPRequest_Teensy41 v1.9.1
 Initialize Ethernet using DHCP => Connected! IP address:192.168.2.107
 
 Making new POST request
@@ -359,7 +359,7 @@ Actual value: 1007
 
 ```
 Start AsyncSimpleGET on TEENSY 4.1
-AsyncHTTPRequest_Teensy41 v1.9.0
+AsyncHTTPRequest_Teensy41 v1.9.1
 Initialize Ethernet using DHCP => Connected! IP address:192.168.2.107
 
 **************************************
@@ -448,6 +448,8 @@ Submit issues to: [AsyncHTTPRequest_Teensy41 issues](https://github.com/khoih-pr
  6. Display only successful responseText in examples
  7. Improve debug messages by adding functions to display error messages instead of `cryptic error number`
  8. Not try to reconnect to the same `host:port` after connected
+ 9. Fix bug of wrong `reqStates`
+
 
 ---
 ---
