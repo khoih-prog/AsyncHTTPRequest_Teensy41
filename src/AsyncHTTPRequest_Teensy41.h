@@ -29,7 +29,7 @@
   1.8.0    K Hoang     01/09/2022 Fix bug. Improve debug messages. Optimize code
   1.8.1    K Hoang     18/10/2022 Not try to reconnect to the same host:port after connected
   1.9.0    K Hoang     21/10/2022 Fix bug. Clean up
-  1.9.1    K Hoang     22/10/2022 Fix bug of wrong reqStates
+  1.9.1    K Hoang     21/10/2022 Fix bug of wrong reqStates
  *****************************************************************************************************************************/
 
 #pragma once
