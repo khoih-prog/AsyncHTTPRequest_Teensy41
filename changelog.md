@@ -13,6 +13,7 @@
 
 * [Table of contents](#table-of-contents)
 * [Changelog](#changelog)
+  * [Releases v1.9.0](#releases-v190)
   * [Releases v1.8.1](#releases-v181)
   * [Releases v1.8.0](#releases-v180)
   * [Releases v1.7.1](#releases-v171)
@@ -21,6 +22,11 @@
 ---
 
 ## Changelog
+
+### Release v1.9.0
+
+1. Fix bug. 
+2. Clean up
 
 ### Releases v1.8.1
 

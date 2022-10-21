@@ -20,7 +20,7 @@
   You should have received a copy of the GNU General Public License along with this program. 
   If not, see <https://www.gnu.org/licenses/>.  
  
-  Version: 1.8.1
+  Version: 1.9.0
   
   Version Modified By   Date      Comments
   ------- -----------  ---------- -----------
@@ -28,6 +28,7 @@
                                   Bump up version to v1.7.1 to sync with AsyncHTTPRequest_Generic v1.7.1
   1.8.0    K Hoang     01/09/2022 Fix bug. Improve debug messages. Optimize code
   1.8.1    K Hoang     18/10/2022 Not try to reconnect to the same host:port after connected
+  1.9.0    K Hoang      21/10/2022 Fix bug. Clean up
  *****************************************************************************************************************************/
 
 #pragma once

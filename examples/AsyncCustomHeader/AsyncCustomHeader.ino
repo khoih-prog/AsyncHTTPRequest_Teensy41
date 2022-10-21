@@ -19,8 +19,8 @@
 //char GET_ServerAddress[]      = "192.168.2.110/";
 char GET_ServerAddress[]    = "http://worldtimeapi.org/api/timezone/America/Toronto.txt";
 
-#define ASYNC_HTTP_REQUEST_TEENSY41_VERSION_MIN_TARGET      "AsyncHTTPRequest_Teensy41 v1.8.1"
-#define ASYNC_HTTP_REQUEST_TEENSY41_VERSION_MIN             1008001
+#define ASYNC_HTTP_REQUEST_TEENSY41_VERSION_MIN_TARGET      "AsyncHTTPRequest_Teensy41 v1.9.0"
+#define ASYNC_HTTP_REQUEST_TEENSY41_VERSION_MIN             1009000
 
 // Level from 0-4
 #define ASYNC_HTTP_DEBUG_PORT     Serial
