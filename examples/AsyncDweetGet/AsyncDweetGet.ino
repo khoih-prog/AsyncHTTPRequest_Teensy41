@@ -40,6 +40,9 @@ String dweetName = "/dweet/for/currentSecond?second=";
 // 600s = 10 minutes to not flooding, 60s in testing
 #define HTTP_REQUEST_INTERVAL_MS     60000  //600000
 
+// Seconds for timeout, default is 3s
+#define DEFAULT_RX_TIMEOUT           10 
+
 // To be included only in main(), .ino with setup() to avoid `Multiple Definitions` Linker Error
 #include <AsyncHTTPRequest_Teensy41.h>          // https://github.com/khoih-prog/AsyncHTTPRequest_Teensy41
 

@@ -28,6 +28,9 @@
 #define ASYNC_HTTP_DEBUG_PORT     Serial
 #define _ASYNC_HTTP_LOGLEVEL_     2
 
+// Seconds for timeout, default is 3s
+#define DEFAULT_RX_TIMEOUT           10 
+
 #include "multiFileProject.h"
 
 // Can be included as many times as necessary, without `Multiple Definitions` Linker Error
