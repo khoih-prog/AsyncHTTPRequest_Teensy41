@@ -201,14 +201,14 @@ Have a look at the discussion in [Different behaviour using the src_cpp or src_h
 
 #### 1. File [AsyncHTTPRequest.ino](examples/AsyncHTTPRequest/AsyncHTTPRequest.ino)
 
-https://github.com/khoih-prog/AsyncHTTPRequest_Teensy41/blob/964b3b4184664efab6b19c704760efc5f2e1558c/examples/AsyncHTTPRequest/AsyncHTTPRequest.ino#L38-L173
+https://github.com/khoih-prog/AsyncHTTPRequest_Teensy41/blob/44abb8b160c6053d179ad5b3086a63033fc9e482/examples/AsyncHTTPRequest/AsyncHTTPRequest.ino#L38-L173
 
 
 ---
 
 #### 2. File [defines.h](examples/AsyncHTTPRequest/defines.h)
 
-https://github.com/khoih-prog/AsyncHTTPRequest_Teensy41/blob/964b3b4184664efab6b19c704760efc5f2e1558c/examples/AsyncHTTPRequest/defines.h#L16-L50
+https://github.com/khoih-prog/AsyncHTTPRequest_Teensy41/blob/44abb8b160c6053d179ad5b3086a63033fc9e482/examples/AsyncHTTPRequest/defines.h#L16-L50
 
 
 ---
@@ -224,23 +224,23 @@ https://github.com/khoih-prog/AsyncHTTPRequest_Teensy41/blob/964b3b4184664efab6b
 
 ```
 Start AsyncHTTPRequest on TEENSY 4.1
-AsyncHTTPRequest_Teensy41 v1.8.1
+AsyncHTTPRequest_Teensy41 v1.9.0
 Initialize Ethernet using DHCP => Connected! IP address:192.168.2.107
 
 **************************************
 abbreviation: EDT
 client_ip: aaa.bbb.ccc.ddd
-datetime: 2022-10-18T15:07:55.344362-04:00
-day_of_week: 2
-day_of_year: 291
+datetime: 2022-10-21T00:49:50.439364-04:00
+day_of_week: 5
+day_of_year: 294
 dst: true
 dst_from: 2022-03-13T07:00:00+00:00
 dst_offset: 3600
 dst_until: 2022-11-06T06:00:00+00:00
 raw_offset: -18000
 timezone: America/Toronto
-unixtime: 1666120075
-utc_datetime: 2022-10-18T19:07:55.344362+00:00
+unixtime: 1666327790
+utc_datetime: 2022-10-21T04:49:50.439364+00:00
 utc_offset: -04:00
 week_number: 42
 **************************************
@@ -248,17 +248,17 @@ week_number: 42
 **************************************
 abbreviation: EDT
 client_ip: aaa.bbb.ccc.ddd
-datetime: 2022-10-18T15:08:54.489027-04:00
-day_of_week: 2
-day_of_year: 291
+datetime: 2022-10-21T00:51:50.438435-04:00
+day_of_week: 5
+day_of_year: 294
 dst: true
 dst_from: 2022-03-13T07:00:00+00:00
 dst_offset: 3600
 dst_until: 2022-11-06T06:00:00+00:00
 raw_offset: -18000
 timezone: America/Toronto
-unixtime: 1666120134
-utc_datetime: 2022-10-18T19:08:54.489027+00:00
+unixtime: 1666327910
+utc_datetime: 2022-10-21T04:51:50.438435+00:00
 utc_offset: -04:00
 week_number: 42
 **************************************
@@ -271,7 +271,7 @@ week_number: 42
 
 ```
 Start AsyncCustomHeader on TEENSY 4.1
-AsyncHTTPRequest_Teensy41 v1.8.1
+AsyncHTTPRequest_Teensy41 v1.9.0
 Initialize Ethernet using DHCP => Connected! IP address:192.168.2.107
 
 Sending GET Request to http://worldtimeapi.org/api/timezone/America/Toronto.txt
@@ -279,17 +279,17 @@ Sending GET Request to http://worldtimeapi.org/api/timezone/America/Toronto.txt
 **************************************
 abbreviation: EDT
 client_ip: aaa.bbb.ccc.ddd
-datetime: 2022-10-18T15:09:54.390100-04:00
-day_of_week: 2
-day_of_year: 291
+datetime: 2022-10-20T23:10:21.133081-04:00
+day_of_week: 4
+day_of_year: 293
 dst: true
 dst_from: 2022-03-13T07:00:00+00:00
 dst_offset: 3600
 dst_until: 2022-11-06T06:00:00+00:00
 raw_offset: -18000
 timezone: America/Toronto
-unixtime: 1666120194
-utc_datetime: 2022-10-18T19:09:54.390100+00:00
+unixtime: 1666321821
+utc_datetime: 2022-10-21T03:10:21.133081+00:00
 utc_offset: -04:00
 week_number: 42
 **************************************
@@ -299,17 +299,17 @@ Sending GET Request to http://worldtimeapi.org/api/timezone/America/Toronto.txt
 **************************************
 abbreviation: EDT
 client_ip: aaa.bbb.ccc.ddd
-datetime: 2022-10-18T15:10:54.440157-04:00
-day_of_week: 2
-day_of_year: 291
+datetime: 2022-10-20T23:11:21.138780-04:00
+day_of_week: 4
+day_of_year: 293
 dst: true
 dst_from: 2022-03-13T07:00:00+00:00
 dst_offset: 3600
 dst_until: 2022-11-06T06:00:00+00:00
 raw_offset: -18000
 timezone: America/Toronto
-unixtime: 1666120254
-utc_datetime: 2022-10-18T19:10:54.440157+00:00
+unixtime: 1666321881
+utc_datetime: 2022-10-21T03:11:21.138780+00:00
 utc_offset: -04:00
 week_number: 42
 **************************************
@@ -322,7 +322,7 @@ week_number: 42
 
 ```
 Start AsyncDweetGET on TEENSY 4.1
-AsyncHTTPRequest_Teensy41 v1.8.1
+AsyncHTTPRequest_Teensy41 v1.9.0
 Initialize Ethernet using DHCP => Connected! IP address:192.168.2.107
 
 **************************************
@@ -339,7 +339,7 @@ Actual value: 66
 
 ```
 Start AsyncDweetPOST on TEENSY 4.1
-AsyncHTTPRequest_Teensy41 v1.8.1
+AsyncHTTPRequest_Teensy41 v1.9.0
 Initialize Ethernet using DHCP => Connected! IP address:192.168.2.107
 
 Making new POST request
@@ -359,23 +359,23 @@ Actual value: 1007
 
 ```
 Start AsyncSimpleGET on TEENSY 4.1
-AsyncHTTPRequest_Teensy41 v1.8.1
+AsyncHTTPRequest_Teensy41 v1.9.0
 Initialize Ethernet using DHCP => Connected! IP address:192.168.2.107
 
 **************************************
 abbreviation: EDT
 client_ip: aaa.bbb.ccc.ddd
-datetime: 2022-10-18T15:09:54.390100-04:00
-day_of_week: 2
-day_of_year: 291
+datetime: 2022-10-20T23:06:21.102828-04:00
+day_of_week: 4
+day_of_year: 293
 dst: true
 dst_from: 2022-03-13T07:00:00+00:00
 dst_offset: 3600
 dst_until: 2022-11-06T06:00:00+00:00
 raw_offset: -18000
 timezone: America/Toronto
-unixtime: 1666120194
-utc_datetime: 2022-10-18T19:09:54.390100+00:00
+unixtime: 1666321581
+utc_datetime: 2022-10-21T03:06:21.102828+00:00
 utc_offset: -04:00
 week_number: 42
 **************************************
@@ -383,17 +383,17 @@ week_number: 42
 **************************************
 abbreviation: EDT
 client_ip: aaa.bbb.ccc.ddd
-datetime: 2022-10-18T15:10:54.440157-04:00
-day_of_week: 2
-day_of_year: 291
+datetime: 2022-10-20T23:08:21.131690-04:00
+day_of_week: 4
+day_of_year: 293
 dst: true
 dst_from: 2022-03-13T07:00:00+00:00
 dst_offset: 3600
 dst_until: 2022-11-06T06:00:00+00:00
 raw_offset: -18000
 timezone: America/Toronto
-unixtime: 1666120254
-utc_datetime: 2022-10-18T19:10:54.440157+00:00
+unixtime: 1666321701
+utc_datetime: 2022-10-21T03:08:21.131690+00:00
 utc_offset: -04:00
 week_number: 42
 **************************************
