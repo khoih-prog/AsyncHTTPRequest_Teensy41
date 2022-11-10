@@ -106,7 +106,7 @@ This library is based on, modified from:
 
  1. [`Arduino IDE 1.8.19+` for Arduino](https://github.com/arduino/Arduino). [![GitHub release](https://img.shields.io/github/release/arduino/Arduino.svg)](https://github.com/arduino/Arduino/releases/latest)
  2. [`Teensy core v1.57+`](https://www.pjrc.com/teensy/td_download.html) for Teensy 4.1
- 3. [`QNEthernet Library version v0.15.0+`](https://github.com/ssilverman/QNEthernet) for Teensy 4.1 built-in Ethernet.
+ 3. [`QNEthernet Library version v0.16.0+`](https://github.com/ssilverman/QNEthernet) for Teensy 4.1 built-in Ethernet.
  4. [`Teensy41_AsyncTCP library v1.1.0+`](https://github.com/khoih-prog/Teensy41_AsyncTCP) to use **Teensy 4.1 using QNEthernet Library**. To install, check [![arduino-library-badge](https://www.ardu-badge.com/badge/Teensy41_AsyncTCP.svg?)](https://www.ardu-badge.com/Teensy41_AsyncTCP)
 
 ---
@@ -201,14 +201,14 @@ Have a look at the discussion in [Different behaviour using the src_cpp or src_h
 
 #### 1. File [AsyncHTTPRequest.ino](examples/AsyncHTTPRequest/AsyncHTTPRequest.ino)
 
-https://github.com/khoih-prog/AsyncHTTPRequest_Teensy41/blob/d75e5e296dd01c143b32b37be1016e72277bb00c/examples/AsyncHTTPRequest/AsyncHTTPRequest.ino#L38-L176
+https://github.com/khoih-prog/AsyncHTTPRequest_Teensy41/blob/558ddadd9345b15f35a53fa6048dbaeb101f3d11/examples/AsyncHTTPRequest/AsyncHTTPRequest.ino#L38-L184
 
 
 ---
 
 #### 2. File [defines.h](examples/AsyncHTTPRequest/defines.h)
 
-https://github.com/khoih-prog/AsyncHTTPRequest_Teensy41/blob/d75e5e296dd01c143b32b37be1016e72277bb00c/examples/AsyncHTTPRequest/defines.h#L16-L50
+https://github.com/khoih-prog/AsyncHTTPRequest_Teensy41/blob/558ddadd9345b15f35a53fa6048dbaeb101f3d11/examples/AsyncHTTPRequest/defines.h#L16-L50
 
 
 ---
@@ -224,43 +224,43 @@ https://github.com/khoih-prog/AsyncHTTPRequest_Teensy41/blob/d75e5e296dd01c143b3
 
 ```
 Start AsyncHTTPRequest on TEENSY 4.1
-AsyncHTTPRequest_Teensy41 v1.9.1
+AsyncHTTPRequest_Teensy41 v1.9.2
 Initialize Ethernet using DHCP => Connected! IP address:192.168.2.107
 
 **************************************
-abbreviation: EDT
+abbreviation: EST
 client_ip: aaa.bbb.ccc.ddd
-datetime: 2022-10-21T00:49:50.439364-04:00
-day_of_week: 5
-day_of_year: 294
-dst: true
-dst_from: 2022-03-13T07:00:00+00:00
-dst_offset: 3600
-dst_until: 2022-11-06T06:00:00+00:00
+datetime: 2022-11-10T13:30:13.641964-05:00
+day_of_week: 4
+day_of_year: 314
+dst: false
+dst_from: 
+dst_offset: 0
+dst_until: 
 raw_offset: -18000
 timezone: America/Toronto
-unixtime: 1666327790
-utc_datetime: 2022-10-21T04:49:50.439364+00:00
-utc_offset: -04:00
-week_number: 42
+unixtime: 1668105013
+utc_datetime: 2022-11-10T18:30:13.641964+00:00
+utc_offset: -05:00
+week_number: 45
 **************************************
 
 **************************************
-abbreviation: EDT
+abbreviation: EST
 client_ip: aaa.bbb.ccc.ddd
-datetime: 2022-10-21T00:51:50.438435-04:00
-day_of_week: 5
-day_of_year: 294
-dst: true
-dst_from: 2022-03-13T07:00:00+00:00
-dst_offset: 3600
-dst_until: 2022-11-06T06:00:00+00:00
+datetime: 2022-11-10T13:30:23.988273-05:00
+day_of_week: 4
+day_of_year: 314
+dst: false
+dst_from: 
+dst_offset: 0
+dst_until: 
 raw_offset: -18000
 timezone: America/Toronto
-unixtime: 1666327910
-utc_datetime: 2022-10-21T04:51:50.438435+00:00
-utc_offset: -04:00
-week_number: 42
+unixtime: 1668105023
+utc_datetime: 2022-11-10T18:30:23.988273+00:00
+utc_offset: -05:00
+week_number: 45
 **************************************
 ```
 
@@ -271,47 +271,47 @@ week_number: 42
 
 ```
 Start AsyncCustomHeader on TEENSY 4.1
-AsyncHTTPRequest_Teensy41 v1.9.1
+AsyncHTTPRequest_Teensy41 v1.9.2
 Initialize Ethernet using DHCP => Connected! IP address:192.168.2.107
 
 Sending GET Request to http://worldtimeapi.org/api/timezone/America/Toronto.txt
 
 **************************************
-abbreviation: EDT
+abbreviation: EST
 client_ip: aaa.bbb.ccc.ddd
-datetime: 2022-10-20T23:10:21.133081-04:00
+datetime: 2022-11-10T13:30:34.026965-05:00
 day_of_week: 4
-day_of_year: 293
-dst: true
-dst_from: 2022-03-13T07:00:00+00:00
-dst_offset: 3600
-dst_until: 2022-11-06T06:00:00+00:00
+day_of_year: 314
+dst: false
+dst_from: 
+dst_offset: 0
+dst_until: 
 raw_offset: -18000
 timezone: America/Toronto
-unixtime: 1666321821
-utc_datetime: 2022-10-21T03:10:21.133081+00:00
-utc_offset: -04:00
-week_number: 42
+unixtime: 1668105034
+utc_datetime: 2022-11-10T18:30:34.026965+00:00
+utc_offset: -05:00
+week_number: 45
 **************************************
 
 Sending GET Request to http://worldtimeapi.org/api/timezone/America/Toronto.txt
 
 **************************************
-abbreviation: EDT
+abbreviation: EST
 client_ip: aaa.bbb.ccc.ddd
-datetime: 2022-10-20T23:11:21.138780-04:00
+datetime: 2022-11-10T13:30:43.989930-05:00
 day_of_week: 4
-day_of_year: 293
-dst: true
-dst_from: 2022-03-13T07:00:00+00:00
-dst_offset: 3600
-dst_until: 2022-11-06T06:00:00+00:00
+day_of_year: 314
+dst: false
+dst_from: 
+dst_offset: 0
+dst_until: 
 raw_offset: -18000
 timezone: America/Toronto
-unixtime: 1666321881
-utc_datetime: 2022-10-21T03:11:21.138780+00:00
-utc_offset: -04:00
-week_number: 42
+unixtime: 1668105043
+utc_datetime: 2022-11-10T18:30:43.989930+00:00
+utc_offset: -05:00
+week_number: 45
 **************************************
 ```
 
@@ -322,7 +322,7 @@ week_number: 42
 
 ```
 Start AsyncDweetGET on TEENSY 4.1
-AsyncHTTPRequest_Teensy41 v1.9.1
+AsyncHTTPRequest_Teensy41 v1.9.2
 Initialize Ethernet using DHCP => Connected! IP address:192.168.2.107
 
 **************************************
@@ -339,7 +339,7 @@ Actual value: 66
 
 ```
 Start AsyncDweetPOST on TEENSY 4.1
-AsyncHTTPRequest_Teensy41 v1.9.1
+AsyncHTTPRequest_Teensy41 v1.9.2
 Initialize Ethernet using DHCP => Connected! IP address:192.168.2.107
 
 Making new POST request
@@ -359,43 +359,43 @@ Actual value: 1007
 
 ```
 Start AsyncSimpleGET on TEENSY 4.1
-AsyncHTTPRequest_Teensy41 v1.9.1
+AsyncHTTPRequest_Teensy41 v1.9.2
 Initialize Ethernet using DHCP => Connected! IP address:192.168.2.107
 
 **************************************
-abbreviation: EDT
+abbreviation: EST
 client_ip: aaa.bbb.ccc.ddd
-datetime: 2022-10-20T23:06:21.102828-04:00
+datetime: 2022-11-10T13:31:03.990079-05:00
 day_of_week: 4
-day_of_year: 293
-dst: true
-dst_from: 2022-03-13T07:00:00+00:00
-dst_offset: 3600
-dst_until: 2022-11-06T06:00:00+00:00
+day_of_year: 314
+dst: false
+dst_from: 
+dst_offset: 0
+dst_until: 
 raw_offset: -18000
 timezone: America/Toronto
-unixtime: 1666321581
-utc_datetime: 2022-10-21T03:06:21.102828+00:00
-utc_offset: -04:00
-week_number: 42
+unixtime: 1668105063
+utc_datetime: 2022-11-10T18:31:03.990079+00:00
+utc_offset: -05:00
+week_number: 45
 **************************************
 
 **************************************
-abbreviation: EDT
+abbreviation: EST
 client_ip: aaa.bbb.ccc.ddd
-datetime: 2022-10-20T23:08:21.131690-04:00
+datetime: 2022-11-10T13:31:14.045606-05:00
 day_of_week: 4
-day_of_year: 293
-dst: true
-dst_from: 2022-03-13T07:00:00+00:00
-dst_offset: 3600
-dst_until: 2022-11-06T06:00:00+00:00
+day_of_year: 314
+dst: false
+dst_from: 
+dst_offset: 0
+dst_until: 
 raw_offset: -18000
 timezone: America/Toronto
-unixtime: 1666321701
-utc_datetime: 2022-10-21T03:08:21.131690+00:00
-utc_offset: -04:00
-week_number: 42
+unixtime: 1668105074
+utc_datetime: 2022-11-10T18:31:14.045606+00:00
+utc_offset: -05:00
+week_number: 45
 **************************************
 ```
 
@@ -449,7 +449,8 @@ Submit issues to: [AsyncHTTPRequest_Teensy41 issues](https://github.com/khoih-pr
  7. Improve debug messages by adding functions to display error messages instead of `cryptic error number`
  8. Not try to reconnect to the same `host:port` after connected
  9. Fix bug of wrong `reqStates`
-
+10. Default to reconnect to the same `host:port` after connected for new HTTP sites.
+11. Use `allman astyle` and add `utils`
 
 ---
 ---
