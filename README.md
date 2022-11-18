@@ -37,7 +37,7 @@
 * [Example AsyncHTTPRequest](#example-asynchttprequest)
   * [1. File AsyncHTTPRequest.ino](#1-file-asynchttprequestino)
   * [2. File defines.h](#2-file-definesh) 
-* [Debug Terminal Ouput Samples](#Debug-Terminal-Ouput-Samples)
+* [Debug Terminal Output Samples](#Debug-Terminal-Output-Samples)
   * [1. AsyncHTTPRequest on TEENSY 4.1](#1-AsyncHTTPRequest-on-TEENSY-41)
   * [2. AsyncCustomHeader on TEENSY 4.1](#2-AsyncCustomHeader-on-TEENSY-41)
   * [3. AsyncDweetGET on TEENSY 4.1](#3-AsyncDweetGET-on-TEENSY-41)
@@ -216,7 +216,7 @@ https://github.com/khoih-prog/AsyncHTTPRequest_Teensy41/blob/558ddadd9345b15f35a
 
 
 
-### Debug Terminal Ouput Samples
+### Debug Terminal Output Samples
 
 
 #### 1. [AsyncHTTPRequest](examples/AsyncHTTPRequest) on TEENSY 4.1
