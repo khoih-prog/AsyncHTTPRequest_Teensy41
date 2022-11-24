@@ -18,7 +18,7 @@
 // To demo how to include files in multi-file Projects
 
 #if !( defined(CORE_TEENSY) && defined(__IMXRT1062__) && defined(ARDUINO_TEENSY41) )
-	#error Only Teensy 4.1 supported
+  #error Only Teensy 4.1 supported
 #endif
 
 #define ASYNC_HTTP_REQUEST_TEENSY41_VERSION_MIN_TARGET      "AsyncHTTPRequest_Teensy41 v1.9.2"
@@ -41,25 +41,25 @@
 
 void setup()
 {
-	Serial.begin(115200);
+  Serial.begin(115200);
 
-	while (!Serial && millis() < 5000);
+  while (!Serial && millis() < 5000);
 
-	Serial.println("\nStart multiFileProject");
-	Serial.println(ASYNC_HTTP_REQUEST_TEENSY41_VERSION);
+  Serial.println("\nStart multiFileProject");
+  Serial.println(ASYNC_HTTP_REQUEST_TEENSY41_VERSION);
 
 #if defined(ASYNC_HTTP_REQUEST_TEENSY41_VERSION_MIN)
 
-	if (ASYNC_HTTP_REQUEST_TEENSY41_VERSION_INT < ASYNC_HTTP_REQUEST_TEENSY41_VERSION_MIN)
-	{
-		Serial.print("Warning. Must use this example on Version equal or later than : ");
-		Serial.println(ASYNC_HTTP_REQUEST_TEENSY41_VERSION_MIN_TARGET);
-	}
+  if (ASYNC_HTTP_REQUEST_TEENSY41_VERSION_INT < ASYNC_HTTP_REQUEST_TEENSY41_VERSION_MIN)
+  {
+    Serial.print("Warning. Must use this example on Version equal or later than : ");
+    Serial.println(ASYNC_HTTP_REQUEST_TEENSY41_VERSION_MIN_TARGET);
+  }
 
 #endif
 }
 
 void loop()
 {
-	// put your main code here, to run repeatedly:
+  // put your main code here, to run repeatedly:
 }
