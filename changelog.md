@@ -31,17 +31,17 @@
 
 ## Changelog
 
-### Release v1.9.2
+### Releases v1.9.2
 
 1. Default to reconnect to the same `host:port` after connected for new HTTP sites. Check [Host/Headers not always sent with 1.10.1 #44](https://github.com/khoih-prog/AsyncHTTPRequest_Generic/issues/44)
 2. Use `allman astyle` and add `utils`
 
-### Release v1.9.1
+### Releases v1.9.1
 
 1. Fix bug of wrong `reqStates`. Check [Release 1.9 breaks previously running code #39](https://github.com/khoih-prog/AsyncHTTPRequest_Generic/issues/39) and [Callback behaviour is buggy (ESP8266) #43](https://github.com/khoih-prog/AsyncHTTPRequest_Generic/issues/43).
 2. Optional larger `DEFAULT_RX_TIMEOUT` from default 3s, for slower networks
 
-### Release v1.9.0
+### Releases v1.9.0
 
 1. Fix bug. 
 2. Clean up
