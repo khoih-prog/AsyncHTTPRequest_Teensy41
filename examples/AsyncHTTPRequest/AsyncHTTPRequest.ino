@@ -37,8 +37,8 @@
 
 #include "defines.h"
 
-#define ASYNC_HTTP_REQUEST_TEENSY41_VERSION_MIN_TARGET      "AsyncHTTPRequest_Teensy41 v1.9.2"
-#define ASYNC_HTTP_REQUEST_TEENSY41_VERSION_MIN             1009002
+#define ASYNC_HTTP_REQUEST_TEENSY41_VERSION_MIN_TARGET      "AsyncHTTPRequest_Teensy41 v1.10.0"
+#define ASYNC_HTTP_REQUEST_TEENSY41_VERSION_MIN             1010000
 
 // Uncomment for certain HTTP site to optimize
 //#define NOT_SEND_HEADER_AFTER_CONNECTED        true

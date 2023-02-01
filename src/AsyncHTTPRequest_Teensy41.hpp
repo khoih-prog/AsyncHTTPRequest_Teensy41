@@ -20,7 +20,7 @@
   You should have received a copy of the GNU General Public License along with this program. 
   If not, see <https://www.gnu.org/licenses/>.  
  
-  Version: 1.9.2
+  Version: 1.10.0
   
   Version Modified By   Date      Comments
   ------- -----------  ---------- -----------
@@ -31,6 +31,7 @@
   1.9.0    K Hoang     21/10/2022 Fix bug. Clean up
   1.9.1    K Hoang     21/10/2022 Fix bug of wrong reqStates
   1.9.2    K Hoang     10/11/2022 Default to reconnect to the same host:port after connected for new HTTP sites
+  1.10.0   K Hoang     01/02/2023 Fix _parseURL() bug
  *****************************************************************************************************************************/
 
 #pragma once
@@ -40,13 +41,13 @@
 
 ////////////////////////////////////////
 
-#define ASYNC_HTTP_REQUEST_TEENSY41_VERSION            "AsyncHTTPRequest_Teensy41 v1.9.2"
+#define ASYNC_HTTP_REQUEST_TEENSY41_VERSION            "AsyncHTTPRequest_Teensy41 v1.10.0"
 
 #define ASYNC_HTTP_REQUEST_TEENSY41_VERSION_MAJOR      1
-#define ASYNC_HTTP_REQUEST_TEENSY41_VERSION_MINOR      9
-#define ASYNC_HTTP_REQUEST_TEENSY41_VERSION_PATCH      2
+#define ASYNC_HTTP_REQUEST_TEENSY41_VERSION_MINOR      10
+#define ASYNC_HTTP_REQUEST_TEENSY41_VERSION_PATCH      0
 
-#define ASYNC_HTTP_REQUEST_TEENSY41_VERSION_INT        1009002
+#define ASYNC_HTTP_REQUEST_TEENSY41_VERSION_INT        1010000
 
 ////////////////////////////////////////
 

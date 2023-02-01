@@ -20,8 +20,8 @@
   You should have received a copy of the GNU General Public License along with this program.
   If not, see <https://www.gnu.org/licenses/>.
 
-  Version: 1.9.2
-
+  Version: 1.10.0
+  
   Version Modified By   Date      Comments
   ------- -----------  ---------- -----------
   1.7.1    K Hoang     18/03/2022 Initial coding for Teensy 4.1 using built-in QNEthernet.
@@ -31,6 +31,7 @@
   1.9.0    K Hoang     21/10/2022 Fix bug. Clean up
   1.9.1    K Hoang     21/10/2022 Fix bug of wrong reqStates
   1.9.2    K Hoang     10/11/2022 Default to reconnect to the same host:port after connected for new HTTP sites
+  1.10.0   K Hoang     01/02/2023 Fix _parseURL() bug
  *****************************************************************************************************************************/
 
 #pragma once
@@ -1169,11 +1170,28 @@ bool  AsyncHTTPRequest::_parseURL(const String& url)
 
   int pathBeg = url.indexOf('/', hostBeg);
 
+  int hostEnd;
+  int portBeg;
+  
   if (pathBeg < 0)
-    return false;
+  {
+    if ( url.indexOf(':', hostBeg) < 0 )
+    {
+      // No port, just https://www.aaa.com
+      hostEnd = url.length();
+    }
+    else
+    {
+      // with port, https://www.aaa.com:443
+      hostEnd = url.indexOf(':', hostBeg);
+    }
+  }
+  else
+  {
+    hostEnd = pathBeg;
+  }
 
-  int hostEnd = pathBeg;
-  int portBeg = url.indexOf(':', hostBeg);
+  portBeg = url.indexOf(':', hostBeg);
 
   if (portBeg > 0 && portBeg < pathBeg)
   {
