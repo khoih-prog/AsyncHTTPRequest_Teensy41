@@ -9,6 +9,7 @@
 <a href="https://www.buymeacoffee.com/khoihprog6" title="Donate to my libraries using BuyMeACoffee"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Donate to my libraries using BuyMeACoffee" style="height: 50px !important;width: 181px !important;" ></a>
 <a href="https://www.buymeacoffee.com/khoihprog6" title="Donate to my libraries using BuyMeACoffee"><img src="https://img.shields.io/badge/buy%20me%20a%20coffee-donate-orange.svg?logo=buy-me-a-coffee&logoColor=FFDD00" style="height: 20px !important;width: 200px !important;" ></a>
 
+
 ---
 ---
 
@@ -29,12 +30,12 @@
   * [1. For Teensy boards](#1-for-teensy-boards)
 * [HOWTO Fix `Multiple Definitions` Linker Error](#howto-fix-multiple-definitions-linker-error)
 * [Examples](#examples)
-  * [1. AsyncCustomHeader](examples/AsyncCustomHeader)
-  * [2. AsyncDweetGet](examples/AsyncDweetGet)
-  * [3. AsyncDweetPost](examples/AsyncDweetPost)
-  * [4. AsyncHTTPRequest](examples/AsyncHTTPRequest)
-  * [5. AsyncSimpleGET](examples/AsyncSimpleGET)
-  * [6. multiFileProject](examples/multiFileProject)
+  * [1. AsyncCustomHeader](https://github.com/khoih-prog/AsyncHTTPRequest_Teensy41/tree/main/examples/AsyncCustomHeader)
+  * [2. AsyncDweetGet](https://github.com/khoih-prog/AsyncHTTPRequest_Teensy41/tree/main/examples/AsyncDweetGet)
+  * [3. AsyncDweetPost](https://github.com/khoih-prog/AsyncHTTPRequest_Teensy41/tree/main/examples/AsyncDweetPost)
+  * [4. AsyncHTTPRequest](https://github.com/khoih-prog/AsyncHTTPRequest_Teensy41/tree/main/examples/AsyncHTTPRequest)
+  * [5. AsyncSimpleGET](https://github.com/khoih-prog/AsyncHTTPRequest_Teensy41/tree/main/examples/AsyncSimpleGET)
+  * [6. multiFileProject](https://github.com/khoih-prog/AsyncHTTPRequest_Teensy41/tree/main/examples/multiFileProject)
 * [Example AsyncHTTPRequest](#example-asynchttprequest)
   * [1. File AsyncHTTPRequest.ino](#1-file-asynchttprequestino)
   * [2. File defines.h](#2-file-definesh) 
@@ -106,8 +107,8 @@ This library is based on, modified from:
 ## Prerequisites
 
  1. [`Arduino IDE 1.8.19+` for Arduino](https://github.com/arduino/Arduino). [![GitHub release](https://img.shields.io/github/release/arduino/Arduino.svg)](https://github.com/arduino/Arduino/releases/latest)
- 2. [`Teensy core v1.57+`](https://www.pjrc.com/teensy/td_download.html) for Teensy 4.1
- 3. [`QNEthernet Library version v0.16.0+`](https://github.com/ssilverman/QNEthernet) for Teensy 4.1 built-in Ethernet.
+ 2. [`Teensy core v1.57+`](https://github.com/PaulStoffregen/cores) for Teensy 4.1. [![GitHub release](https://img.shields.io/github/release/PaulStoffregen/cores.svg)](https://github.com/PaulStoffregen/cores/releases/latest)
+ 3. [`QNEthernet Library version v0.17.0+`](https://github.com/ssilverman/QNEthernet) for Teensy 4.1 built-in Ethernet.
  4. [`Teensy41_AsyncTCP library v1.1.0+`](https://github.com/khoih-prog/Teensy41_AsyncTCP) to use **Teensy 4.1 using QNEthernet Library**. To install, check [![arduino-library-badge](https://www.ardu-badge.com/badge/Teensy41_AsyncTCP.svg?)](https://www.ardu-badge.com/Teensy41_AsyncTCP)
 
 ---
@@ -177,7 +178,7 @@ in many files. But be sure to use the following `.h` file **in just 1 `.h`, `.cp
 #include "AsyncHTTPRequest_Teensy41.h"           //https://github.com/khoih-prog/AsyncHTTPRequest_Teensy41
 ```
 
-Check the new [**multiFileProject** example](examples/multiFileProject) for a `HOWTO` demo.
+Check the new [**multiFileProject** example](https://github.com/khoih-prog/AsyncHTTPRequest_Teensy41/tree/main/examples/multiFileProject) for a `HOWTO` demo.
 
 Have a look at the discussion in [Different behaviour using the src_cpp or src_h lib #80](https://github.com/khoih-prog/ESPAsync_WiFiManager/discussions/80)
 
@@ -188,28 +189,28 @@ Have a look at the discussion in [Different behaviour using the src_cpp or src_h
 
 ### Examples
 
- 1. [AsyncCustomHeader](examples/AsyncCustomHeader)
- 2. [AsyncDweetGet](examples/AsyncDweetGet)
- 3. [AsyncDweetPost](examples/AsyncDweetPost)
- 4. [AsyncHTTPRequest](examples/AsyncHTTPRequest)
- 5. [AsyncSimpleGET](examples/AsyncSimpleGET)
- 6. [multiFileProject](examples/multiFileProject)
+ 1. [AsyncCustomHeader](https://github.com/khoih-prog/AsyncHTTPRequest_Teensy41/tree/main/examples/AsyncCustomHeader)
+ 2. [AsyncDweetGet](https://github.com/khoih-prog/AsyncHTTPRequest_Teensy41/tree/main/examples/AsyncDweetGet)
+ 3. [AsyncDweetPost](https://github.com/khoih-prog/AsyncHTTPRequest_Teensy41/tree/main/examples/AsyncDweetPost)
+ 4. [AsyncHTTPRequest](https://github.com/khoih-prog/AsyncHTTPRequest_Teensy41/tree/main/examples/AsyncHTTPRequest)
+ 5. [AsyncSimpleGET](https://github.com/khoih-prog/AsyncHTTPRequest_Teensy41/tree/main/examples/AsyncSimpleGET)
+ 6. [multiFileProject](https://github.com/khoih-prog/AsyncHTTPRequest_Teensy41/tree/main/examples/multiFileProject)
 
 
 ---
 
-### Example [AsyncHTTPRequest](examples/AsyncHTTPRequest)
+### Example [AsyncHTTPRequest](https://github.com/khoih-prog/AsyncHTTPRequest_Teensy41/tree/main/examples/AsyncHTTPRequest)
 
-#### 1. File [AsyncHTTPRequest.ino](examples/AsyncHTTPRequest/AsyncHTTPRequest.ino)
+#### 1. File [AsyncHTTPRequest.ino](https://github.com/khoih-prog/AsyncHTTPRequest_Teensy41/tree/main/examples/AsyncHTTPRequest/AsyncHTTPRequest.ino)
 
-https://github.com/khoih-prog/AsyncHTTPRequest_Teensy41/blob/558ddadd9345b15f35a53fa6048dbaeb101f3d11/examples/AsyncHTTPRequest/AsyncHTTPRequest.ino#L38-L184
+https://github.com/khoih-prog/AsyncHTTPRequest_Teensy41/blob/7a4784ab17a50d3208e7d7b24b24d9e70ba6240e/examples/AsyncHTTPRequest/AsyncHTTPRequest.ino#L38-L184
 
 
 ---
 
-#### 2. File [defines.h](examples/AsyncHTTPRequest/defines.h)
+#### 2. File [defines.h](https://github.com/khoih-prog/AsyncHTTPRequest_Teensy41/tree/main/examples/AsyncHTTPRequest/defines.h)
 
-https://github.com/khoih-prog/AsyncHTTPRequest_Teensy41/blob/558ddadd9345b15f35a53fa6048dbaeb101f3d11/examples/AsyncHTTPRequest/defines.h#L16-L50
+https://github.com/khoih-prog/AsyncHTTPRequest_Teensy41/blob/7a4784ab17a50d3208e7d7b24b24d9e70ba6240e/examples/AsyncHTTPRequest/defines.h#L16-L50
 
 
 ---
@@ -220,59 +221,59 @@ https://github.com/khoih-prog/AsyncHTTPRequest_Teensy41/blob/558ddadd9345b15f35a
 ### Debug Terminal Output Samples
 
 
-#### 1. [AsyncHTTPRequest](examples/AsyncHTTPRequest) on TEENSY 4.1
+#### 1. [AsyncHTTPRequest](https://github.com/khoih-prog/AsyncHTTPRequest_Teensy41/tree/main/examples/AsyncHTTPRequest) on TEENSY 4.1
 
 
 ```cpp
 Start AsyncHTTPRequest on TEENSY 4.1
-AsyncHTTPRequest_Teensy41 v1.9.2
+AsyncHTTPRequest_Teensy41 v1.10.0
 Initialize Ethernet using DHCP => Connected! IP address:192.168.2.107
 
 **************************************
 abbreviation: EST
 client_ip: aaa.bbb.ccc.ddd
-datetime: 2022-11-10T13:30:13.641964-05:00
-day_of_week: 4
-day_of_year: 314
+datetime: 2023-01-31T23:54:16.675525-05:00
+day_of_week: 2
+day_of_year: 31
 dst: false
 dst_from: 
 dst_offset: 0
 dst_until: 
 raw_offset: -18000
 timezone: America/Toronto
-unixtime: 1668105013
-utc_datetime: 2022-11-10T18:30:13.641964+00:00
+unixtime: 1675227256
+utc_datetime: 2023-02-01T04:54:16.675525+00:00
 utc_offset: -05:00
-week_number: 45
+week_number: 5
 **************************************
 
 **************************************
 abbreviation: EST
 client_ip: aaa.bbb.ccc.ddd
-datetime: 2022-11-10T13:30:23.988273-05:00
-day_of_week: 4
-day_of_year: 314
+datetime: 2023-01-31T23:55:16.675337-05:00
+day_of_week: 2
+day_of_year: 31
 dst: false
 dst_from: 
 dst_offset: 0
 dst_until: 
 raw_offset: -18000
 timezone: America/Toronto
-unixtime: 1668105023
-utc_datetime: 2022-11-10T18:30:23.988273+00:00
+unixtime: 1675227316
+utc_datetime: 2023-02-01T04:55:16.675337+00:00
 utc_offset: -05:00
-week_number: 45
+week_number: 5
 **************************************
 ```
 
 ---
 
-#### 2. [AsyncCustomHeader](examples/AsyncCustomHeader) on TEENSY 4.1
+#### 2. [AsyncCustomHeader](https://github.com/khoih-prog/AsyncHTTPRequest_Teensy41/tree/main/examples/AsyncCustomHeader) on TEENSY 4.1
 
 
 ```cpp
 Start AsyncCustomHeader on TEENSY 4.1
-AsyncHTTPRequest_Teensy41 v1.9.2
+AsyncHTTPRequest_Teensy41 v1.10.0
 Initialize Ethernet using DHCP => Connected! IP address:192.168.2.107
 
 Sending GET Request to http://worldtimeapi.org/api/timezone/America/Toronto.txt
@@ -280,19 +281,19 @@ Sending GET Request to http://worldtimeapi.org/api/timezone/America/Toronto.txt
 **************************************
 abbreviation: EST
 client_ip: aaa.bbb.ccc.ddd
-datetime: 2022-11-10T13:30:34.026965-05:00
-day_of_week: 4
-day_of_year: 314
+datetime: 2023-01-31T23:56:16.674942-05:00
+day_of_week: 2
+day_of_year: 31
 dst: false
 dst_from: 
 dst_offset: 0
 dst_until: 
 raw_offset: -18000
 timezone: America/Toronto
-unixtime: 1668105034
-utc_datetime: 2022-11-10T18:30:34.026965+00:00
+unixtime: 1675227376
+utc_datetime: 2023-02-01T04:56:16.674942+00:00
 utc_offset: -05:00
-week_number: 45
+week_number: 5
 **************************************
 
 Sending GET Request to http://worldtimeapi.org/api/timezone/America/Toronto.txt
@@ -300,30 +301,30 @@ Sending GET Request to http://worldtimeapi.org/api/timezone/America/Toronto.txt
 **************************************
 abbreviation: EST
 client_ip: aaa.bbb.ccc.ddd
-datetime: 2022-11-10T13:30:43.989930-05:00
-day_of_week: 4
-day_of_year: 314
+datetime: 2023-01-31T23:57:16.675848-05:00
+day_of_week: 2
+day_of_year: 31
 dst: false
 dst_from: 
 dst_offset: 0
 dst_until: 
 raw_offset: -18000
 timezone: America/Toronto
-unixtime: 1668105043
-utc_datetime: 2022-11-10T18:30:43.989930+00:00
+unixtime: 1675227436
+utc_datetime: 2023-02-01T04:57:16.675848+00:00
 utc_offset: -05:00
-week_number: 45
+week_number: 5
 **************************************
 ```
 
 
 ---
 
-#### 3. [AsyncDweetGET](examples/AsyncDweetGET) on TEENSY 4.1
+#### 3. [AsyncDweetGET](https://github.com/khoih-prog/AsyncHTTPRequest_Teensy41/tree/main/examples/AsyncDweetGET) on TEENSY 4.1
 
 ```cpp
 Start AsyncDweetGET on TEENSY 4.1
-AsyncHTTPRequest_Teensy41 v1.9.2
+AsyncHTTPRequest_Teensy41 v1.10.0
 Initialize Ethernet using DHCP => Connected! IP address:192.168.2.107
 
 **************************************
@@ -336,11 +337,11 @@ Actual value: 66
 
 ---
 
-#### 4. [AsyncDweetPOST](examples/AsyncDweetPOST) on TEENSY 4.1
+#### 4. [AsyncDweetPOST](https://github.com/khoih-prog/AsyncHTTPRequest_Teensy41/tree/main/examples/AsyncDweetPOST) on TEENSY 4.1
 
 ```cpp
 Start AsyncDweetPOST on TEENSY 4.1
-AsyncHTTPRequest_Teensy41 v1.9.2
+AsyncHTTPRequest_Teensy41 v1.10.0
 Initialize Ethernet using DHCP => Connected! IP address:192.168.2.107
 
 Making new POST request
@@ -355,48 +356,48 @@ Actual value: 1007
 
 ---
 
-#### 5. [AsyncSimpleGET](examples/AsyncSimpleGET) on TEENSY 4.1
+#### 5. [AsyncSimpleGET](https://github.com/khoih-prog/AsyncHTTPRequest_Teensy41/tree/main/examples/AsyncSimpleGET) on TEENSY 4.1
 
 
 ```cpp
 Start AsyncSimpleGET on TEENSY 4.1
-AsyncHTTPRequest_Teensy41 v1.9.2
+AsyncHTTPRequest_Teensy41 v1.10.0
 Initialize Ethernet using DHCP => Connected! IP address:192.168.2.107
 
 **************************************
 abbreviation: EST
 client_ip: aaa.bbb.ccc.ddd
-datetime: 2022-11-10T13:31:03.990079-05:00
-day_of_week: 4
-day_of_year: 314
+datetime: 2023-01-31T23:58:16.676610-05:00
+day_of_week: 2
+day_of_year: 31
 dst: false
 dst_from: 
 dst_offset: 0
 dst_until: 
 raw_offset: -18000
 timezone: America/Toronto
-unixtime: 1668105063
-utc_datetime: 2022-11-10T18:31:03.990079+00:00
+unixtime: 1675227496
+utc_datetime: 2023-02-01T04:58:16.676610+00:00
 utc_offset: -05:00
-week_number: 45
+week_number: 5
 **************************************
 
 **************************************
 abbreviation: EST
 client_ip: aaa.bbb.ccc.ddd
-datetime: 2022-11-10T13:31:14.045606-05:00
-day_of_week: 4
-day_of_year: 314
+datetime: 2023-01-31T23:59:16.675139-05:00
+day_of_week: 2
+day_of_year: 31
 dst: false
 dst_from: 
 dst_offset: 0
 dst_until: 
 raw_offset: -18000
 timezone: America/Toronto
-unixtime: 1668105074
-utc_datetime: 2022-11-10T18:31:14.045606+00:00
+unixtime: 1675227556
+utc_datetime: 2023-02-01T04:59:16.675139+00:00
 utc_offset: -05:00
-week_number: 45
+week_number: 5
 **************************************
 ```
 
@@ -452,6 +453,9 @@ Submit issues to: [AsyncHTTPRequest_Teensy41 issues](https://github.com/khoih-pr
  9. Fix bug of wrong `reqStates`
 10. Default to reconnect to the same `host:port` after connected for new HTTP sites.
 11. Use `allman astyle` and add `utils`
+11. Fix `_parseURL()` bug. Check [Bug with _parseURL() #21](https://github.com/khoih-prog/AsyncHTTPSRequest_Generic/issues/21)
+12. Improve `README.md` so that links can be used in other sites, such as `PIO`
+
 
 ---
 ---
